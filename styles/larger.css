@@ -20,7 +20,7 @@
     nav ul{
         list-style-type: none;
     }
-    nav li{
+    nav a{
         flex: 1 1 100%;
         color: rgb(193, 180 ,153);
         text-align: center;

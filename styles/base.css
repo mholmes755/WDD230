@@ -36,10 +36,9 @@ nav{
 nav ul{
     list-style-type: none;
 }
-nav li{
+nav a{
     flex: 1 1 100%;
     text-align: center;
-    padding: .5rem;
     font-size: 45px;
     color: rgb(193, 180 ,153);
     padding: 1rem 0;
