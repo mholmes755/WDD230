@@ -1,0 +1,42 @@
+@media screen and (min-width: 40rem)
+{
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    .card{
+        box-shadow: 1px 1px 10px black;
+    }
+    .ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav{
+        background-color: rgb(31, 17, 106);
+        max-width: 100%;
+    }
+
+    nav ul{
+        list-style-type: none;
+    }
+    nav li{
+        flex: 1 1 100%;
+        color: rgb(193, 180 ,153);
+        text-align: center;
+        padding:2rem;
+    }
+    nav .active{
+        background-color: rgba(0,0,0,.4);
+    }
+    nav li:hover{
+        background-color: rgba(255,255,255,.4);
+    }
+
+    footer{
+        display: flex;
+        padding: 1rem;
+        font-size: 45px;
+    }
+}
+

@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jersey 10', sans-serif;
+}
+
+header{
+    background-color: rgba(113, 16, 84, 1);
+}
+
+header img{
+    margin: 15px;
+    border-radius: 15px;
+    width: 175px;
+}
+
+header span{
+    display: block;
+    text-align: center;
+    color: rgb(193, 180, 153);
+    font-size: 85px;
+    padding-bottom: 10px;
+}
+
+nav{
+    list-style-type: none;
+    background-color: rgb(31, 17, 106);
+    margin: 0 auto;
+    max-width: 800px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    flex: 1 1 100%;
+    text-align: center;
+    padding: .5rem;
+    font-size: 45px;
+    color: rgb(193, 180 ,153);
+    padding: 1rem 0;
+
+}
+nav .active{
+    background-color: rgba(0,0,0,.3);
+}
+nav li:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.parent{
+    margin: 1rem .5rem;
+}
+.card{
+    border: 1px solid #415541;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.card li{
+    padding: 0.75rem 0;
+}
+.card p{
+    padding: .75rem 0;
+    display: block;
+    text-align: center;
+}
+.parent h2{
+    background-color: rgba(113, 16, 84, 1);
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+footer{
+    background-color: rgba(113, 16, 84, 1);
+}
