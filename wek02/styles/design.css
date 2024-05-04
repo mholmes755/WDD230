@@ -44,3 +44,9 @@ footer {
 	font-size: smaller;
 	text-align: right;
 }
+
+h6{
+    display: block;
+    position: fixed;
+
+}
