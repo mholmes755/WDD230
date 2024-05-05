@@ -1,14 +1,20 @@
 header, footer{
-    background-color: rgb(91, 48, 0);
-    color: white;
+    background-color: rgba(8, 86, 29, 1);
+    color: navajowhite;
     padding: 20px;
     font-size: 50px;
     font-family: 'Acme', sans-serif;
-
-
 }
+
+nav{
+    background-color: rgb(31, 17, 106);
+    color: white;
+    font-size: 2rem;
+    padding: 15px;
+}
+
 body{
-    background-color: rgb(164, 207, 255);
+    background-color: rgb(255, 255, 255);
     font-family: sans-serif;
 
 }
@@ -18,14 +24,14 @@ p{
 }
 h2{
     font-family: 'Acme';
+    color: navajowhite;
+    background-color: rgba(8, 86, 29, 1);
 }
 img{
     border: 10px solid black;
 }
-#headerColor{
-    color:rgb(91, 48, 0);
-}
+
 #backgroundColor{
-    background-color: rgb(91, 48, 0);
-    color: rgb(164, 207, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
