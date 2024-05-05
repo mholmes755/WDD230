@@ -27,6 +27,38 @@ header span{
     padding-bottom: 10px;
 }
 
+
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    padding: 2px;
+    background: none;
+    color: #000;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+#menu::before{
+    content: '☰ Menu';
+}
+
+#menu.open::before{
+    content: "⌄";
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.open a{
+    display: block;
+}
+
+
 nav{
     list-style-type: none;
     background-color: rgb(31, 17, 106);
