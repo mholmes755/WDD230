@@ -30,6 +30,7 @@ modeBtn.addEventListener('click', () =>{
     if (modeBtn.textContent.includes('🕶️')){
         main.style.background = "#000"
         main.style.color = "#fff";
+        // main.style.a.color = "#000";
         modeBtn.textContent = "🔆";
     }
     else{
