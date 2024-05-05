@@ -22,7 +22,7 @@
     }
     nav a{
         flex: 1 1 100%;
-        color: rgb(193, 180 ,153);
+        color: navajowhite;
         text-align: center;
         padding:2rem;
     }
@@ -35,8 +35,14 @@
 
     footer{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 1rem;
-        font-size: 45px;
+        font-size: 25px;
+    }
+
+    #lastModified{
+        margin-left: auto;
     }
 }
 

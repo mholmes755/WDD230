@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background-color: rgba(113, 16, 84, 1);
+    background-color: rgba(8, 86, 29, 1);
 }
 
 header img{
@@ -22,7 +22,7 @@ header img{
 header span{
     display: block;
     text-align: center;
-    color: rgb(193, 180, 153);
+    color: navajowhite;
     font-size: 85px;
     padding-bottom: 10px;
 }
@@ -40,7 +40,7 @@ nav a{
     flex: 1 1 100%;
     text-align: center;
     font-size: 45px;
-    color: rgb(193, 180 ,153);
+    color: navajowhite;
     padding: 1rem 0;
 
 }
@@ -69,13 +69,19 @@ nav li:hover{
     text-align: center;
 }
 .parent h2{
-    background-color: rgba(113, 16, 84, 1);
+    background-color: rgb(8, 86, 29);
+    color: navajowhite;
     display: block;
     text-align: center;
     padding: 1rem 0;
 }
 
+.lastModified{
+    text-align: right;
+}
 
 footer{
-    background-color: rgba(113, 16, 84, 1);
+    background-color: rgba(8, 86, 29, 1);
+    color: navajowhite;
+    font-size: 20px;
 }
