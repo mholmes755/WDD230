@@ -16,9 +16,9 @@
     .card{
         box-shadow: 1px 1px 10px black;
     }
-    #menu{
+    /* #menu{
         display: none;
-    }
+    } */
     .ul{
         display: flex;
         justify-content: space-evenly;
