@@ -1,0 +1,34 @@
+header{
+    background-color: black;
+    color: navajowhite;
+    text-align: center;
+
+}
+
+
+img{
+    display: block;
+    margin: 10px auto;  /*  <--- This is how you center something!!! */
+    width: 400px;
+    height: 600px; 
+    animation: fade 10s;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: navajowhite;
+}
