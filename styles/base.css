@@ -26,6 +26,26 @@ header span{
     font-size: 85px;
     padding-bottom: 10px;
 }
+.hero{
+    margin: 10px;
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.herolabel{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(navajowhite, #d7d3d3);
+    padding: 10px;
+    box-shadow: 0 0 3rem whitesmoke;
+}
+.herolabel p{
+    font-size: 1rem;
+}
 
 #mode{
     position: absolute;
@@ -114,6 +134,10 @@ nav li:hover{
 
 .lastModified{
     text-align: right;
+}
+
+.map{
+    width: 100%;
 }
 
 footer{

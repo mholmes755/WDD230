@@ -35,6 +35,16 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Meridian, Idaho LDS Temple" width="960px" height="430px">
+            </picture>
+            <div class="herolabel">
+                <p>Meridian Idaho Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Frontend Development</h1>
         <div class="parent">
             <section class="card">
@@ -52,10 +62,11 @@
                 <h2>Information</h2>
                 <p>United States of America</p>
                 <p>Weather</p>
-                <p>Page Visits: </p>
+                <p id="visits">Page Visits: </p>
 
             </section>
         </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184913.22852292148!2d-116.39870711785551!3d43.60093631676996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1715451930821!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p id="currentDate"></p>

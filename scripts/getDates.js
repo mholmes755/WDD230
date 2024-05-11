@@ -38,3 +38,30 @@ modeBtn.addEventListener('click', () =>{
         modeBtn.textContent = "🕶️";
     }
 });
+
+// Number of Visits Local Storage
+
+const visitsDisplay = document.querySelector("#visits");
+
+
+let numVisits = Number(window.localStorage.getItem("visits"));
+
+if(numVisits !== 0){
+    visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
+}
+else{
+    visitsDisplay.textContent = "This is your first Visit";
+}
+
+numVisits++;
+
+localStorage.setItem("visits", numVisits);
+
+// // Local Storage Functions
+// function setVisits(){
+//     localStorage.setItem('.visits', JSON.stringify());
+// };
+
+// function getVisits(){
+//     return JSON.parse(localStorage.getItem('.visits'));
+// }
