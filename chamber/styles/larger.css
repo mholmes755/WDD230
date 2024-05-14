@@ -1,5 +1,5 @@
-@media screen and(min-width: 40rem)
-{
+/* @media screen and(min-width: 1000px)
+{ */
     *{
         margin: 0;
         padding: 0;
@@ -7,7 +7,8 @@
     }
 
     body{
-        background-color: rgb(149, 100, 11)
+        background-color: rgb(149, 100, 11);
+        max-width: 1500px;
     }
 
     header{
@@ -32,6 +33,7 @@
         position: fixed;
         bottom: 85px;
     }
+
 
     ul{
         list-style-type: none;
@@ -58,7 +60,6 @@
     section{
         height: 150px;
     }
-
     #currentEvents{
         z-index: 1;
         grid-column: 1/2;
@@ -94,9 +95,37 @@
         color: black;
         font-size: 1rem;
     }
+
+    footsection{
+        background-color: rgba(222, 184, 135, .65);
+    }
     #lastModified{
         position: fixed;
         bottom: 10px;
         right: 10px;
     }
+
+/* Discovery Page  */
+#attractions{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 5px solid black;
 }
+    #spellingB{
+        grid-row: 1/2;
+    }
+    #funRun{
+        grid-row: 2/3;
+    }
+    #calendar {
+        grid-row: 3/4 ;
+    }
+
+#local-pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+/* } */

@@ -1,8 +1,8 @@
 // Get current date and time
 
 const lastModif = document.lastModified;
-const lastModifText = 'Last Modified: ' + lastModif;
-document.getElementById('lastModified').textContent = lastModifText;
+const lastModifText = lastModif;
+document.getElementById('lastModified').innerHTML = `<strong>Last Modified: ${lastModifText}</strong>`;
 
 // weekday: 'long', month: 'short', day: 'numeric',
 const options = {year: 'numeric'};
