@@ -12,7 +12,7 @@
 .wf1 label{
     display: block;
     padding-top: 1rem;
-    color: rgb(31, 17, 106);
+    color: grey;
     font-size: 1rem;
 }
 
@@ -25,7 +25,6 @@
     border: 2px solid grey;
     border-radius: 6px;
     padding: .75rem;
-    color: grey;
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -61,13 +60,14 @@
     border-left: 8px solid green;
 }
 
-.wf1 input [type="submit"]{
+#submit{
     border: none;
-    background-image: linear-gradient(blue, black);
+    background-image: linear-gradient(rgba(31, 17, 106, .7), black);
     color: white;
     border-radius: 6px;
     padding: .8rem;
     width: 96%;
     max-width: 400px;
     margin: 0rem 2% 2rem 2%;
-    box-shadow: 1px 1px 4px #999;}
+    box-shadow: 1px 1px 4px #999;
+}

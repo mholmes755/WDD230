@@ -25,11 +25,13 @@ hamButton.addEventListener('click', () => {
 
 const modeBtn = document.querySelector('#mode');
 const main = document.querySelector('main');
+// const label = document.querySelectorAll('label');
 
 modeBtn.addEventListener('click', () =>{
     if (modeBtn.textContent.includes('🕶️')){
         main.style.background = "#000"
         main.style.color = "#fff";
+        // label.style.color = "#fff";
         modeBtn.textContent = "🔆";
     }
     else{
