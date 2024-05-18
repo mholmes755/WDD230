@@ -1,0 +1,45 @@
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+.wf1 legend{
+    padding: .5rem;
+    font-weight:bold;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: rgb(31, 17, 106);
+    font-size: 1rem;
+}
+
+.wf1 input[type="text"]
+.wf1 input[type="password"]
+.wf1 input[type="email"]
+.wf1 input[type="range"]
+{
+    background-color: whitesmoke;
+    display: block;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: .75rem;
+    color: grey;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input:required{
+    border-left: 8px solid red;
+}
+
+.wf1 input:required:valid{
+    border-left: 8px solid green;
+}
+
+label{
+    border-radius: 6px;
+}

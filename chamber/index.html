@@ -18,85 +18,78 @@
     <link rel="" href="/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>City of Darret</h1>
-        <h5>Chamber of Commerce</h5>
-    </header>
-    <button id="menu"></button>
-        <nav id="navigation">
-            <ul>
-                <li>
-                    <img src="" alt="Home Icon">
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <img src="" alt="Explore Icon">
-                    <a href="explore.html">Explore</a>
-                </li>
-                <li>
-                    <img src="#" alt="Directory Icon">
-                    <a href="#">Directory</a>
-                </li>
-                <li>
-                    <img src="#" alt="Join Icon">
-                    <a href="#">Join</a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <button>Join</button>
-    <div>
-        <img id="heroImage" src="images/cityView.png" alt="Ariel view of City">
-        <section id="currentEvents">
-            <h2>Current Events</h2>
-            <ul>
-                <li>Event 1</li>
-                <li>Event 2</li>
-                <li>Event 3</li>
-            </ul>
-        </section>
-        <section id="weather">
-            <h2>Today's Weather</h2>
-            <p>Temperature: </p>
-            <p>Wind: </p>
-            <p>Cloud Coverage: </p>
-        </section>
-        <section id="ads">
-            <h2>Advertisements</h2>
-            <div>
-                <p>Add 1</p>
-                <img src="#" alt="">
-            </div>
-            <div>                
-                <p>Add 2</p>
-                <img src="#" alt="">
-            </div>
-            <div>                
-                <p>Add 3</p>
-                <img src="#" alt="">
-            </div>        
-        </section>
-    </div>
 
     <main>
-<!--    
-    Join Button next to "Boise City"
+        <header>
+            <h1>City of Darret</h1>
+            <h5>Chamber of Commerce</h5>
+        </header>
+        <button id="menu"></button>
+            <nav class="navigation">
+                <ul>
+                    <li><a class="active" href="index.html"> Home </a></li>
+                    <li><a href="explore.html"> Explore </a></li>
+                    <li><a href="#"> Directory </a></li>
+                    <li><a href="#"> Join </a></li>
+                </ul>
+            </nav>
+    
+    
+            <button>Join</button>
+        <div class="content">
+            <img id="heroImage" src="images/cityView.png" alt="Ariel view of City">
+            
+            <section id="weather">
+                <h2>Today's Weather</h2>
+                <br>
+                <p>Temperature: 76&deg;</p>
+               <br> 
+                <p>Wind: 2 mph<i class="wi wi-strong-wind"></i></p>
+                <br>
+                <p>Cloud Coverage: Partly Cloudy</p>
+            </section>
+            
+            <section id="currentEvents">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Event 1</li>
+                    <li>Event 2</li>
+                    <li>Event 3</li>
+                </ul>
+            </section>
 
--->
+            <section id="ads">
+                <h2>Advertisements</h2>
+                <div>
+                    <p>Add 1</p>
+                    <img src="#" alt="">
+                </div>
+                <div>                
+                    <p>Add 2</p>
+                    <img src="#" alt="">
+                </div>
+                <div>                
+                    <p>Add 3</p>
+                    <img src="#" alt="">
+                </div>        
+            </section>
+        </div>
+    
 
 
     </main>
     <footer>
         <!-- Put name and current  copyright year -->
-        <footsection>
             <p>Michael Holmes</p>
+
             <p id="currentDate"></p>
-            <p id="lastModified"><strong> Last Modified: </strong></p>
-        </footsection>
+        
+            <p id="lastModified"></p>
+        
     </footer>
     <script src="scripts/chamber.js"></script>
     

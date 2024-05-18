@@ -16,8 +16,8 @@
     <title>Boise Chamber of Commerce</title>
     <link rel="icon" type="image/png" href="/chamber/images/favicon.ico" sizes="32x32" />
     <link rel="" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <!-- <link rel="stylesheet" href="styles/base.css"> -->
 </head>
 
 <body>
@@ -26,91 +26,199 @@
         <h5>Chamber of Commerce</h5>
     </header>
     <button id="menu"></button>
-        <nav id="navigation">
+        <nav class="navigation">
             <ul>
-                <li>
-                    <img src="#" alt="Home Icon">
-                    <a href="index.html" >Home</a>
-                </li>
-                <li>
-                    <img src="#" alt="Explore Icon">
-                    <a href="explore.html">Explore</a>
-                </li>
-                <li>
-                    <img src="#" alt="Directory Icon">
-                    <a href="#">Directory</a>
-                </li>
-                <li>
-                    <img src="#" alt="Join Icon">
-                    <a href="#">Join</a>
-                </li>
-            </ul>
-        </nav>
+                <li><a href="index.html"> Home </a></li>
+                <li><a class="active" href="explore.html"> Explore </a></li>
+                <li><a href="#"> Directory </a></li>
+                <li><a href="#"> Join </a></li>
+            </ul>        </nav>
 
 
-        <button>Join</button>
 
     <main>
-        <div id="explore-main"> 
-            <div id="attractions">    
+
+        <div id="exploreMain"> 
+            <div id="attractions">   
+                 
                 <section id="spellingB">
                     <h3>Local Spelling B Champion</h3>
                     <img title="Spelling B Champion Profile" src="#" alt="Spelling B Champion" loading="lazy">
                     <p>The town Spelling B took place this past weekend on May 10th - May 12th. People of all age groups participated in thier own divisions. After 2 days we had champions from each of our different age divisions compete in a competitive "spell off" where each individual was asked to spell the same word and everyone who got it right advanced. William Grey, our "champion of champions", won on Sunday by spelling the word "fuchsia" which is both a color and a plant.</p>
                 </section>
-                <section  id="calendar">
-                    <h3>Calendar</h3>
-                    <img title="" src="#" alt="Event Calendar" loading="lazy">
-                    <p></p>
-                </section>
+                
                 <section id="funRun">
                     <h3>Summer Fun Run</h3>
                     <img title="Summer Fun Run" src="#" alt="Generic 5k image" loading="lazy">
                     <p>Coming this month, a summer 5k to raise money for our high school cross country team! This light 5k through scenic Darret will bw sure to put fun into your summer!</p>
                 </section>
+                <section  id="calendar">
+                    <h3>Calendar</h3>
+                    <table>
+                        <caption id="caption"></caption>
+                        <tr>
+                            <!-- Days of the Week -->
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+
+                        <tr>
+                            <!-- week dates -->
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                        </tr>
+                        <tr class="events">
+                            <!-- events -->
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <!-- week dates -->
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                        </tr>
+                        <tr class="events">
+                            <!-- events -->
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <!-- week dates -->
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                        </tr>
+                        <tr class="events">
+                            <!-- events -->
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td>Today(JS)</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <!-- week dates -->
+                            <th>19</th>
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                        </tr>
+                        <tr class="events">
+                            <!-- events -->
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <!-- week dates -->
+                            <th>26</th>
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                            <th></th>
+                        </tr>
+                        <tr class="events">
+                            <!-- events -->
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                            <td>FUN RUN!</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
 
             </div>
-            <div id="local-pictures">
-                <picture1>
+            <div id="localPictures">
+                <picture1 class="picture">
                     <source media="(max-width: 500px)" srcset="">
                     <source media="(max-width: 1000px)" srcset="">
-                    <img src="images/treesPicture.png" alt="" width="100" height="50" loading="lazy">
+                    <img src="images/treesPicture.png" alt="" width="375" height="190" loading="lazy">
+                    <p>This is text about the image</p>
                 </picture1>
-                <picture2>
+                <picture2 class="picture">
                     <source media="(max-width: 500px)" srcset="">
                     <source media="(max-width: 1000px)" srcset="">
-                    <img src="images/boardwalkPicture.png" alt="" width="100" height="50" loading="lazy">
+                    <img src="images/boardwalkPicture.png" alt="" width="375" height="190" loading="lazy">
+                    <p>This is text about the image</p>
                 </picture2>
-                <picture3>
+                <picture3 class="picture">
                     <source media="(max-width: 500px)" srcset="">
                     <source media="(max-width: 1000px)" srcset="">
-                    <img src="images/foodCourt.png" alt="" width="100" height="50" loading="lazy">
+                    <img src="images/foodCourt.png" alt="" width="375" height="190" loading="lazy">
+                    <p>This is text about the image</p>
                 </picture3>
-                <picture4>
+                <picture4 class="picture">
                     <source media="(max-width: 500px)" srcset="">
                     <source media="(max-width: 1000px)" srcset="">
-                    <img src="images/place-holder-image.png" alt="" width="100" height="50" loading="lazy">
+                    <img src="images/botanicalGardens.png" alt="" width="375" height="190" loading="lazy">
+                    <p>This is text about the image</p>
                 </picture4>
-                <picture5>
+                <picture5 class="picture">
                     <source media="(max-width: 500px)" srcset="">
                     <source media="(max-width: 1000px)" srcset="">
-                    <img src="images/place-holder-image.png" alt="" width="100" height="50" loading="lazy">
+                    <img src="images/library.png" alt="" width="375" height="190" loading="lazy">
+                    <p>This is text about the image</p>
                 </picture5>
-                <picture6>
+                <picture6 class="picture">
                     <source media="(max-width: 500px)" srcset="">
                     <source media="(max-width: 1000px)" srcset="">
-                    <img src="images/place-holder-image.png" alt="" width="100" height="50" loading="lazy">
+                    <img src="images/place-holder-image.png" alt="" width="375" height="190" loading="lazy">
+                    <p>This is text about the image</p>
                 </picture6>
             </div>
         </div>
     </main>
     <footer>
         <!-- Put name and current  copyright year -->
-        <footsection>
+        
             <p>Michael Holmes</p>
             <p id="currentDate"></p>
+            
             <p id="lastModified"></p>
-        </footsection>
+
     </footer>
     <script src="scripts/chamber.js"></script>
     

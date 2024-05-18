@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+    <meta name= "description" content= "Michael Holmes WDD 230 - Web Frontend Development course assignment portal">
+    <meta name= "author" content= "Michael Holmes">
+    <meta property= "og:title" content= "My Portfolio Page">
+    <meta property= "og:type" content= "website">
+    <meta property= "og:image" content= "images/meta-img-boise.png">
+    <meta property= "og:url" content= "https://mholmes755.github.io/WDD230/">
+    <link rel= "preconnect" href= "https://fonts.googleapis.com">
+    <link rel= "preconnect" href= "https://fonts.gstatic.com" crossorigin>
+    <link href= "https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel= "stylesheet">
+    <title>Michael Holmes - WDD 230 - Web Frontend Development</title>
+    <link rel= "icon" href= "images/favicon.ico" type= "image/x-icon">
+    <link rel= "stylesheet" href= "styles/normalize.css">
+    <link rel= "stylesheet" href= "styles/base.css">
+    <link rel= "stylesheet" href= "styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+</head>
+<body>
+    <header>
+        <div id="mode">🕶️</div>
+        <img src= "images/profile.png" alt="Me smiling">
+        <span>Michael Holmes</span>
+    </header>
+    <button id="menu" name="Menu Button"></button>
+    <nav class="navigation">
+        <ul class="ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li class="active"><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+        
+        <main>
+
+
+            <form method="get" action="record.html" class="wf1">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label>Username* <input type="text" name="user" id="username" required></label>
+                    <label>Password* <input type="password" name="password" id="password" pattern="[A-Za-z]{6-9}" placeholder="Password must be 6-9 characters long. No spaces" required></label>
+                    <label>Confirm Password* <input type="password" name="password confirmation" id="password2" pattern="[A-Za-z]{6-9}" required></label>
+                    <div id="formmessage"></div>
+                    <label>Email Address* <input type="email"  name="email address" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid email address" required></label>
+                    
+                    <label for="r">Page Rating </label>
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="0">6</option>
+                        <option value="1">7</option>
+                        <option value="2">8</option>
+                        <option value="3">9</option>
+                        <option value="4">10</option>
+                    </datalist>
+                                       
+                </fieldset>
+                <input type="submit" value="Submit">
+
+
+            </form>
+
+        </main>
+
+        <footer>
+            <p id="currentDate"></p>
+            <p>Michael A. Holmes</p>
+            <p id="lastModified"> Last Modified: </p> 
+        </footer>
+        <script src="scripts/validate.js"></script> 
+</body>
+</html>

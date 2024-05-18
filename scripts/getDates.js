@@ -57,11 +57,4 @@ numVisits++;
 
 localStorage.setItem("visits", numVisits);
 
-// // Local Storage Functions
-// function setVisits(){
-//     localStorage.setItem('.visits', JSON.stringify());
-// };
 
-// function getVisits(){
-//     return JSON.parse(localStorage.getItem('.visits'));
-// }
