@@ -44,12 +44,12 @@
                 <fieldset>
                     <legend>User Information</legend>
                     <label>Username* <input type="text" name="user" id="username" required></label>
-                    <label>Password* <input type="password" name="password" id="password" pattern="[A-Za-z]{6-9}" placeholder="Password must be 6-9 characters long. No spaces" required></label>
-                    <label>Confirm Password* <input type="password" name="password confirmation" id="password2" pattern="[A-Za-z]{6-9}" required></label>
+                    <label>Password* <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{6,}" placeholder="Minumun of 6 characters. No spaces" required></label>
+                    <label>Confirm Password* <input type="password" name="password confirmation" id="password2" pattern="[A-Za-z0-9]{6,}" required></label>
                     <div id="formmessage"></div>
-                    <label>Email Address* <input type="email"  name="email address" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="Please enter a valid email address" required></label>
+                    <label>Email Address* <input type="email"  name="email address" id="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" placeholder="Please enter a valid email address" required></label>
                     
-                    <label for="r">Page Rating </label>
+                    <label for="range">Page Rating </label>
                     <div id="rangevalue">0</div>
                     <input type="range" id="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
                     <datalist id="rangevalues">
@@ -59,15 +59,18 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
-                        <option value="0">6</option>
-                        <option value="1">7</option>
-                        <option value="2">8</option>
-                        <option value="3">9</option>
-                        <option value="4">10</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </datalist>
+                    <div class="datalist-labels">
+                        <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                    </div>
                                        
                 </fieldset>
-                <input type="submit" value="Submit">
+                <input id="submit" type="submit" value="Rate Page">
 
 
             </form>
@@ -79,6 +82,7 @@
             <p>Michael A. Holmes</p>
             <p id="lastModified"> Last Modified: </p> 
         </footer>
-        <script src="scripts/validate.js"></script> 
+        <script src="scripts/validate.js"></script>
+        <script src="scripts/getDates.js"></script>
 </body>
 </html>

@@ -102,9 +102,9 @@ main {
     margin-right: 6px;
 }
 
-.wf1 input[type="submit"]
+#submit
 {
-    border: none;
+    border: 5px dashed blueviolet;
     background-image: linear-gradient(blue, black);
     color: white;
     border-radius: 6px;

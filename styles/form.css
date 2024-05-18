@@ -16,10 +16,9 @@
     font-size: 1rem;
 }
 
-.wf1 input[type="text"]
-.wf1 input[type="password"]
+.wf1 input[type="text"],
+.wf1 input[type="password"],
 .wf1 input[type="email"]
-.wf1 input[type="range"]
 {
     background-color: whitesmoke;
     display: block;
@@ -32,6 +31,28 @@
     appearance: none;
 }
 
+.wf1 input[type="range"]
+{
+    background-color: whitesmoke;
+    display: block;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: .75rem;
+    color: grey;
+    width: 100%;
+    max-width: 400px;
+}
+
+.datalist-labels {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
 .wf1 input:required{
     border-left: 8px solid red;
 }
@@ -40,6 +61,13 @@
     border-left: 8px solid green;
 }
 
-label{
+.wf1 input [type="submit"]{
+    border: none;
+    background-image: linear-gradient(blue, black);
+    color: white;
     border-radius: 6px;
-}
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 0rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;}
