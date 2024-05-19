@@ -8,9 +8,7 @@
         background-color: white;
     }
 
-    #menu{
-        display: none;
-    }
+
     button{
         display: block;
         background-color: rgb(11, 73, 149);
@@ -22,6 +20,11 @@
         text-align: center;
 
     }
+
+    #menu{
+        display: none;
+    }
+
     nav{
         display: flex;
         justify-content: center;
@@ -35,15 +38,14 @@
         display: flex;
         justify-content: space-between;
         text-align: center;
-    }
-    nav a{
-        width: 100%;
-        flex: 1 1 100%;
-        padding: 1rem;
-        margin: 0 auto;
-        text-align: center;
-        text-decoration: none;
+        list-style-type: none;
+        align-content: center;
+        padding: 15px 15px 15px 15px;
+        font-size: 1.5rem;
         color: white;
+    }
+    .navigation a{
+        display: flex;
     }
     nav a:hover{
         background-color: rgba(0, 0, 0, .75);
@@ -98,8 +100,11 @@
     /* Explore Main area CSS */
     #exploreMain{
         display: flex;
-        /* flex-wrap: wrap; */
         gap: 11rem;
+    }
+    #message{
+        display: block;
+        border-bottom: 1px dashed grey;
     }
     #attractions{
         display: grid;
@@ -120,8 +125,6 @@
         text-align: center;
 
     }
-
-    
 
     #funRun{
         box-shadow: 8px 8px 5px rgb(222, 184, 135);

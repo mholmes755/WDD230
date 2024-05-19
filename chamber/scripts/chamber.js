@@ -21,7 +21,7 @@ document.getElementById('caption').innerHTML = currentYear +" " + currentMonth;
 
 // Responsive Hamburger Menu
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('#navigation');
+const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
@@ -29,20 +29,26 @@ hamButton.addEventListener('click', () => {
 });
 
 
-// // Number of Visits Local Storage
+// Days since last Visit Local Storage
 
-// const visitsDisplay = document.querySelector("#visits");
-
-
-// let numVisits = Number(window.localStorage.getItem("visits"));
-
-// if(numVisits !== 0){
-//     visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
-// }
-// else{
-//     visitsDisplay.textContent = "This is your first Visit";
-// }
-
-// numVisits++;
-
-// localStorage.setItem("visits", numVisits);
+document.addEventListener('DOMContentLoaded', function() {
+    const messageElement = document.getElementById('message');
+    const lastVisit = localStorage.getItem('lastVisit');
+    const currentVisit = new Date();
+    
+    if (lastVisit) {
+        const lastVisitDate = new Date(lastVisit);
+        const timeDifference = currentVisit - lastVisitDate;
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        
+        if (daysDifference < 7) {
+            messageElement.textContent = "Back so soon? Great!";
+        } else {
+            messageElement.textContent = `It's been ${daysDifference} days since your last visit.`;
+        }
+    } else {
+        messageElement.textContent = "Welcome! This is your first visit.";
+    }
+    
+    localStorage.setItem('lastVisit', currentVisit);
+});
