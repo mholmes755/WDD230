@@ -37,33 +37,7 @@
         </nav>
     <main id="joinMain">
 
-        <form class="form" method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Member Information</legend>
-                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                    <label>Position Title<input type="text" name="title" id="businesstitle" pattern="^[A-Za-z\s-]+${7,}"></label>
-                    <label>Email*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
-                    <label>Mobile Phone*<input type="tel" name="mobilephone" id="mobilephone" placeholder="1234445678" required></label>
-                                    
-
-            </fieldset>
-            <fieldset>
-                <legend>Business Information</legend>
-                    <label>Business Name*<input type="text" id="busname" name="businessName" required></label>
-                    <div>Membership Level</div>
-                    <label><input type="radio" id="nonprofit" name="memberLevel">Non Profit Organizations</label>
-                    <label><input type="radio" id="bronze" name="memberLevel">Bronze Membership</label>
-                    <label><input type="radio" id="silver" name="memberLevel">Silver Membership</label>
-                    <label><input type="radio" id="gold" name="memberLevel">Gold Membership</label>
-                    <label><input type="hidden" name="timestamp" id="timestamp"></label>
-                
-
-            </fieldset>
-            <input type="submit" id="subimt" value="Join Community">
-        </form>
-
-        <section>
+                <section>
             <table id="joinTable">
                 <thead>
                     <tr>
@@ -117,6 +91,34 @@
             </table>
         </section>
         
+
+        <form class="form" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Member Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Position Title<input type="text" name="title" id="businesstitle" pattern="^[A-Za-z\s-]+${7,}"></label>
+                    <label>Email*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label>Mobile Phone*<input type="tel" name="mobilephone" id="mobilephone" placeholder="1234445678" required></label>
+                                    
+
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                    <label>Business Name*<input type="text" id="busname" name="businessName" required></label>
+                    <div>Membership Level</div>
+                    <label><input type="radio" id="nonprofit" name="memberLevel">Non Profit Organizations</label>
+                    <label><input type="radio" id="bronze" name="memberLevel">Bronze Membership</label>
+                    <label><input type="radio" id="silver" name="memberLevel">Silver Membership</label>
+                    <label><input type="radio" id="gold" name="memberLevel">Gold Membership</label>
+                    <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                
+
+            </fieldset>
+            <input type="submit" id="subimt" value="Join Community">
+        </form>
+
+
     </main>
     <footer>
         <!-- Put name and current  copyright year -->

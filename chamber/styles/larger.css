@@ -168,7 +168,7 @@
 
     .form{
         width: 400px;
-        margin: var(--margin);
+        margin-left: 300px;
 
     }
     .form fieldset{
@@ -213,15 +213,16 @@
         border-bottom: 2px dashed rgb(11, 73, 149);
     }
     .form input[type="submit"]{
-        width: 150px;
+        width: 96%;
         height: 50px;
+        margin: 5px 2%;
         background: linear-gradient(rgb(11, 73, 149), whitesmoke);
     }
 
 
 
     #joinTable{
-        margin-left: -150px;
+        margin-left: 10px;
     }
 
     #joinTable td, #joinTable th{

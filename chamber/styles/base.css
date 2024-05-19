@@ -103,8 +103,7 @@ li{
     padding: 2rem auto;
 }
 footer{
-    display: grid;
-    grid-template-columns: 50px 1fr 1fr;
+    display: block;
     position: relative;
     bottom: 0;
     color: black;
@@ -143,4 +142,71 @@ th, td{
 #localPictures{
     display: inline;
     max-width: 200px;
+}
+
+
+/* Form Page*/
+.form{
+    width: 400px;
+    margin: var(--margin);
+
+}
+.form fieldset{
+    border: 3px solid rgb(11, 73, 149);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.form label{
+    display: block;
+    margin: 1.5rem 10px;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"]
+{
+    display: block;
+    font-size: 1.5rem;
+    background-color: rgb(230, 223, 223);
+    border-radius: 6px;
+}
+.form input[type="radio"]{
+    margin-right: 5px;
+}
+
+
+.form input[required]
+{
+    border-left: 8px solid red;
+}
+
+.form input[required]:valid
+{
+    border-left: 8px solid green;
+}
+
+.form legend, .form div{
+    margin: .5rem 10px;
+    color: rgb(11, 114, 63)
+}
+.form div{
+    border-bottom: 2px dashed rgb(11, 73, 149);
+}
+.form input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(rgb(11, 73, 149), whitesmoke);
+}
+.memberLevel{
+    width: 50px;
+}
+#joinTable td, #joinTable th{
+    text-align: center;
+    height: 50px;
+}
+.form input[type="submit"]{
+    width: 96%;
+    margin: 5px 2%;
+    border-radius: 6px;
 }
