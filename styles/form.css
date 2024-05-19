@@ -1,11 +1,19 @@
+:root{
+    --background-color: whitesmoke;
+    --margin: 2rem 0;
+    --border: 2px solid grey;
+    --border-radius: 6px;
+}
+
+
 .wf1 fieldset{
-    margin: 2rem 0;
+    margin: var(--margin);
     border: 2px solid grey;
     border-radius: 6px;
     padding: .5rem 2%;
 }
 .wf1 legend{
-    padding: .5rem;
+    padding: .5rem 2%;
     font-weight:bold;
 }
 
@@ -20,10 +28,10 @@
 .wf1 input[type="password"],
 .wf1 input[type="email"]
 {
-    background-color: whitesmoke;
+    background-color: var(--background-color);
     display: block;
-    border: 2px solid grey;
-    border-radius: 6px;
+    border: var(--border);
+    border-radius: var(--border-radius);
     padding: .75rem;
     width: 100%;
     max-width: 400px;
@@ -34,8 +42,8 @@
 {
     background-color: whitesmoke;
     display: block;
-    border: 2px solid grey;
-    border-radius: 6px;
+    border: var(--border);
+    border-radius: var(--border-radius);
     padding: .75rem;
     color: grey;
     width: 100%;
@@ -64,7 +72,7 @@
     border: none;
     background-image: linear-gradient(rgba(31, 17, 106, .7), black);
     color: white;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     padding: .8rem;
     width: 96%;
     max-width: 400px;
