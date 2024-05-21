@@ -1,0 +1,33 @@
+{
+    "name":"",
+    "move-in-date": 2016,
+    "number-of-members" : 5,
+    "visited-bishoporic": true,
+    "members":[
+        {
+            "name": "David Jones",
+            "gender": "M",
+            "birthdate": "03.02.1984"
+        },
+        {
+            "name": "Susan Jones",
+            "gender": "F",
+            "birthdate": "05.18.1986"
+        },
+        {
+            "name": "Frankie Jones",
+            "gender": "M",
+            "birthdate": "01.12.2010"
+        },
+        {
+            "name": "Mallory Jones",
+            "gender": "F",
+            "birthdate": "05.27.2013"
+        },
+        {
+            "name": "Cailex Jones",
+            "gender": "M",
+            "birthdate": "06.24.2014"
+        }
+    ]
+}
