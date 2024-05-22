@@ -22,7 +22,7 @@ async function apiFetch(){
 
 const displayResults = (data)=>{
     //card builder code
-        currentTemp.innerHTML = `${data.temp_min}&deg;F`;
+        currentTemp.innerHTML = `${data.main.temp}&deg;F`;
         const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
         let desc = data.weather[0].description;
         weatherIcon.setAttribute('src', iconsrc);
