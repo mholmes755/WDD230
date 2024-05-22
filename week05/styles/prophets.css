@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(224, 221, 221);
+}
+
+header{
+    display: block;
+    background: linear-gradient(rgb(76, 76, 210), grey);
+}
+header h1{
+    text-align: center;
+}
+#cards{
+display: grid;
+grid-template-columns: repeat(2, auto);
+grid-gap: 10px;
+row-gap: 100px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    border: 1px solid black;
+    padding: 3rem;
+    /* margin-left: 10rem; */
+    background-color: rgb(89, 139, 123);
+    text-align: center;
+    box-shadow: 2px 2px 20px black;
+
+}
+section h2, section p{
+    text-align: center;
+}
+
+@media screen and (max-width: 40rem){
+    #cards{
+        display: block;
+    }
+}
