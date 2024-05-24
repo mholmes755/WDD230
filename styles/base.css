@@ -113,9 +113,16 @@ nav li:hover{
 }
 .card p{
     padding: .75rem 0;
-    display: block;
+    /* display: block; */
     text-align: center;
 }
+
+    /* Weather Code */
+#figcaption{
+        text-transform: capitalize;
+        display: inline-block;
+}
+
 .parent h2{
     background-color: rgb(8, 86, 29);
     color: navajowhite;
