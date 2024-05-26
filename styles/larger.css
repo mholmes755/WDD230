@@ -92,6 +92,30 @@
         margin-left: auto;
     }
 
+    #card ul{
+        display: flex;
+        list-style-type: none;
+    
+    }
+    
+    #card h3{
+        display: block;
+        padding-top: .7rem;
+        padding-left: 10px;
+        border-bottom: none;
+    }
+    
+    #card a{
+        color: blue;
+        text-decoration: none;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 3px solid black;
+    }
+    #card a:hover{
+        color: red;
+    }
+
 
 }
 

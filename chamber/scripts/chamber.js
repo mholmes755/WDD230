@@ -14,14 +14,14 @@ const currentMonth = new Date().toLocaleDateString('en-US', monthOption);
 const copyrightYear = '&copy' + currentYear;
 
 document.getElementById('currentDate').innerHTML = copyrightYear + " - WDD230 Web Frontend Development";
-document.getElementById('caption').innerHTML = currentYear +" " + currentMonth;
+document.getElementById('caption').textContent = `${currentYear} ${currentMonth}`;
 
 
 
 
 // Responsive Hamburger Menu
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const navigation = document.querySelector('ul');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
