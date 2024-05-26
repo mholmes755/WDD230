@@ -1,0 +1,96 @@
+{
+    "companies":[
+        {
+            "company":[
+                {
+                    "name":"nike",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "iconName":"",
+                    "membershipLevel":"Bronze",
+                    "description":"athletic clothing brand"
+                }
+            ]
+            
+        },
+        {
+            "company":[
+                {
+                    "name":"amazon",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "iconName":"",
+                    "membershipLevel":"Bronze",
+                    "description":"delivery service"
+                }
+            ]
+        },
+        {
+            "company":[
+                {
+                    "name":"footlocker",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "iconName":"",
+                    "membershipLevel":"Bronze",
+                    "description":"shoe store"
+                }
+            ]
+        },
+        {
+            "company":[
+                {
+                    "name":"dunkin donuts",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "iconName":"",
+                    "membershipLevel":"Bronze",
+                    "description":"donuts and coffee"
+                }
+            ]
+        },
+        {
+            "company":[
+                {
+                    "name":"starbucks",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "iconName":"",
+                    "membershipLevel":"Bronze",
+                    "description":"sandwhiches and coffee"
+                }
+            ]
+        },
+        {
+            "company":[
+                {
+                    "name":"walgreens",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "iconName":"",
+                    "membershipLevel":"Bronze",
+                    "description":"Medicine and candy"
+                }
+            ]
+        },
+        {
+            "company":[
+                {
+                    "name":"jamba juice",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "iconName":"",
+                    "membershipLevel":"Bronze",
+                    "description":"Smoothie place"
+                }
+            ]
+        }
+    ]
+}

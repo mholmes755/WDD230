@@ -52,3 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     localStorage.setItem('lastVisit', currentVisit);
 });
+
+
+
+// Directory Page, get info from JSON
+
