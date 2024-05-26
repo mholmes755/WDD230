@@ -21,7 +21,7 @@
                     "title":"BoM Local Storage"
                 },
                 {
-                    "url":"week02/design",
+                    "url":"week02/design.html",
                     "title":"Design Practice"
 
                 },
@@ -36,7 +36,7 @@
             "week": "Week 3",
             "links": [
                 {
-                    "url":"http://127.0.0.1:5500/week03/images/landscape.webp",
+                    "url":"week03/images/landscape.webp",
                     "title":"WebP Image"
                 },
                 {
@@ -45,7 +45,7 @@
 
                 },
                 {
-                    "url":"week03/responsive-images.html",
+                    "url":"week03/responsive-images.htmll",
                     "title":"Responsive Images"
                     
                 },
@@ -64,7 +64,7 @@
                     "title":"Pseudo Classes"
                 },
                 {
-                    "url":"week04/tablebuild.hmtl",
+                    "url":"week04/tablebuild.html",
                     "title":"Table Build Excercise"
 
                 },
@@ -91,6 +91,15 @@
                     "url":"week05/weather.html",
                     "title":"Weather API"
 
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {
+                    "url":"",
+                    "title":""
                 }
             ]
         }
