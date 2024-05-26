@@ -31,6 +31,7 @@ const displayLinks = (weeks) =>{
             let link = document.createElement('a');
 
             link.setAttribute("href", links.url);
+            link.setAttribute("target", "blank");
             link.textContent = links.title;
     
             li.appendChild(link);
