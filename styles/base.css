@@ -144,3 +144,26 @@ footer{
     color: navajowhite;
     font-size: 20px;
 }
+
+#card ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+#card h3{
+    display: block;
+    padding-top: 1.5rem;
+    padding-left: 10px;
+}
+
+#card a{
+    color: blue;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 3px solid black;
+}
+#card a:hover{
+    color: red;
+}

@@ -1,7 +1,7 @@
 
 const baseURL = "https://github.com/mholmes755/wdd230";
-const linksURL = "https://github.com/mholmes755/wdd230/data/links.json"
-const section = dodcument.querySelector('#card')
+const linksURL = "https://mholmes755.github.io/wdd230/data/links.json"
+const section = document.querySelector('#card')
 
 
 async function getLinks(linksURL) {
@@ -16,17 +16,29 @@ async function getLinks(linksURL) {
 
 const displayLinks = (weeks) =>{
     //section builder code
-    weeks.forEach(week => {
+    weeks.forEach(week => { // Access individual Week
+
         let ul = document.createElement('ul');
-        let li = document.createElement('li');
-        let link = document.createElement('a');
+        let weekNumber = document.createElement('h3');
+        weekNumber.textContent = week.week;
+
+        ul.appendChild(weekNumber); // Display Week Number above each set of associated links
 
 
-        link.setAttribute = ("href", week.url);
-        link.textContent = `${week.links.title}`;
+        
+        week.links.forEach(links =>{ // Access individual week information
+            let li = document.createElement('li');
+            let link = document.createElement('a');
 
-        li.appendChild(link);
-        ul.appendChild(li);
+            link.setAttribute("href", links.url);
+            link.textContent = links.title;
+    
+            li.appendChild(link);
+            ul.appendChild(li);
+
+        });
+
+
         section.appendChild(ul);
         
     });        

@@ -37,21 +37,21 @@
             "links": [
                 {
                     "url":"http://127.0.0.1:5500/week03/images/landscape.webp",
-                    "title":"WebP Image Type"
+                    "title":"WebP Image"
                 },
                 {
                     "url":"week03/lazyload.html",
-                    "title":"Lazy Loading Activity"
+                    "title":"Lazy Loading Pics"
 
                 },
                 {
                     "url":"week03/responsive-images.html",
-                    "title":"Responsive Images Site"
+                    "title":"Responsive Images"
                     
                 },
                 {
                     "url":"week03/storage.html",
-                    "title":"BOM Local Storage"
+                    "title":"Local Storage"
                     
                 }
             ]
