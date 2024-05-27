@@ -205,3 +205,10 @@ th, td{
     margin: 5px 2%;
     border-radius: 6px;
 }
+
+
+/* Directory CSS */
+
+#companyCards{
+    display: block;
+}

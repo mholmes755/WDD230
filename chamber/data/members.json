@@ -91,6 +91,19 @@
                     "description":"Smoothie place"
                 }
             ]
+        },
+        {
+            "company":[
+                {
+                    "name":"Panera Bread",
+                    "address":"1234 2nd street Boise, ID",
+                    "phoneNumber":"123-456-4928",
+                    "websiteURL":"www.url.com",
+                    "icon":"",
+                    "membershipLevel":"Bronze",
+                    "description":"Sandwhiches and Soups"
+                }
+            ]
         }
     ]
 }

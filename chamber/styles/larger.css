@@ -243,8 +243,16 @@
         height: 545px;
     }
 
-
-
-
-
+    #companyCards{
+        display: grid;
+        grid-template-columns: auto auto;
+        border: 5px solid black;
+    }
+    #companyCards p{
+        color: black;
+    }
+    #companyCards section{
+        
+        border: 2px solid green;
+    }
 }
