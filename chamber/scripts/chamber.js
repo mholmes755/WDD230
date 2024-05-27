@@ -57,3 +57,61 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Directory Page, get info from JSON
 
+const baseURL = "https://mholmes755.github.io/wdd230";
+const membersURL = "https://mholmes755.github.io/wdd230/chamber/data/members.json";
+const companyCards = document.querySelector('#companyCards');
+
+async function getMembers(membersURL){
+
+    // Fetch Data from URL
+    const response = await fetch(membersURL);
+
+    // Parse Data in JSON Format
+    const data = await response.json();
+
+    // Display members according to the name "companies" in my json file
+    displayMembers(data.companies);
+};
+
+const displayMembers = (companies) =>{
+    companies.forEach(companyGroup => {
+        companyGroup.company.forEach(company =>{
+
+            let ul = document.createElement('ul');
+            let name = document.createElement('h3');
+            name.textContent = company.name;
+
+            let address = document.createElement('p');
+            address.textContent = company.address;
+
+            let phoneNumber = document.createElement('p');
+            phoneNumber.textContent = company.phoneNumber;
+
+            let websiteURL = document.createElement('p');
+            websiteURL.textContent = company.websiteURL;
+
+            let icon = document.createElement('p');
+            icon.textContent = company.icon;
+
+            let membershipLevel = document.createElement('p');
+            membershipLevel.textContent = company.membershipLevel;
+
+            let description = document.createElement('p');
+            description.textContent = company.description;
+    
+            ul.appendChild(icon);
+            ul.appendChild(name);
+            ul.appendChild(address);
+            ul.appendChild(phoneNumber);
+            ul.appendChild(websiteURL);
+            ul.appendChild(membershipLevel);
+            ul.appendChild(description);
+
+            companyCards.appendChild(ul);
+        });
+
+    });
+
+}
+
+getMembers(membersURL);

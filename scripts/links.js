@@ -16,7 +16,7 @@ async function getLinks(linksURL) {
 
 const displayLinks = (weeks) =>{
     //section builder code
-    weeks.forEach(week => { // Access individual Week
+    weeks.forEach(week => {
 
         let ul = document.createElement('ul');
         let weekNumber = document.createElement('h3');

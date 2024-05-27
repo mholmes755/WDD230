@@ -7,7 +7,7 @@
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
-                    "iconName":"",
+                    "icon":"",
                     "membershipLevel":"Bronze",
                     "description":"athletic clothing brand"
                 }
@@ -21,7 +21,7 @@
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
-                    "iconName":"",
+                    "icon":"",
                     "membershipLevel":"Bronze",
                     "description":"delivery service"
                 }
@@ -34,7 +34,7 @@
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
-                    "iconName":"",
+                    "icon":"",
                     "membershipLevel":"Bronze",
                     "description":"shoe store"
                 }
@@ -47,7 +47,7 @@
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
-                    "iconName":"",
+                    "icon":"",
                     "membershipLevel":"Bronze",
                     "description":"donuts and coffee"
                 }
@@ -60,7 +60,7 @@
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
-                    "iconName":"",
+                    "icon":"",
                     "membershipLevel":"Bronze",
                     "description":"sandwhiches and coffee"
                 }
@@ -73,7 +73,7 @@
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
-                    "iconName":"",
+                    "icon":"",
                     "membershipLevel":"Bronze",
                     "description":"Medicine and candy"
                 }
@@ -86,7 +86,7 @@
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
-                    "iconName":"",
+                    "icon":"",
                     "membershipLevel":"Bronze",
                     "description":"Smoothie place"
                 }
