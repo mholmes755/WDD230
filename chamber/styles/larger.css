@@ -46,7 +46,7 @@
     }
 
     .active{
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(11, 73, 149, .5);
     }
 
     .navigation a{
@@ -248,11 +248,5 @@
         grid-template-columns: auto auto;
         border: 5px solid black;
     }
-    #companyCards p{
-        color: black;
-    }
-    #companyCards section{
-        
-        border: 2px solid green;
-    }
+
 }
