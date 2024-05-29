@@ -116,3 +116,47 @@ const displayMembers = (companies) =>{
 }
 
 getMembers(membersURL);
+
+
+
+
+// Weather Information
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const windSpeed = document.querySelector('#windSpeed');
+const cloudCover = document.querySelector('cloudCover');
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.61&lon=-116.19&units=imperial&appid=facb7aca3b14efbdf278cb020b3ec24c';
+
+async function apiFetch(){
+    try{
+        const response = await fetch(url);
+        if (response.ok){
+            const data =  await response.json();
+            console.log(data);
+            displayResults(data);
+        } 
+        else{
+            throw Error(await response.text());
+        }
+    }catch (error) {
+        console.log(error);
+    }
+}
+
+const displayResults = (data)=>{
+    //card builder code
+
+        const roundedTemp = Math.round(data.main.temp);
+        currentTemp.innerHTML = `Todays Temperature: ${roundedTemp}&deg;F`;
+        const roundedWind = Math.round(data.wind.speed);
+        windSpeed.innerHTML = `Wind speed: ${roundedWind} mph <i class="wi wi-strong-wind"></i>`;
+        const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        cloudCover.textContent = data.weather[0].description;
+        weatherIcon.setAttribute('src', iconsrc);
+        weatherIcon.setAttribute('width', 25);
+        weatherIcon.setAttribute('height', 30);
+        captionDesc.innerHTML = `${desc}`;
+};
+
+apiFetch();
