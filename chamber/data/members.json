@@ -3,13 +3,13 @@
         {
             "company":[
                 {
-                    "name":"nike",
+                    "name":"Brothers Pizza",
                     "address":"1234 2nd street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
                     "icon":"",
                     "membershipLevel":"Bronze",
-                    "description":"athletic clothing brand"
+                    "description":"Local pizza and salad resaurant"
                 }
             ]
             
@@ -17,26 +17,26 @@
         {
             "company":[
                 {
-                    "name":"amazon",
-                    "address":"1234 2nd street Boise, ID",
+                    "name":"The Green Dragon",
+                    "address":"1352 Fairview street Boise, ID",
                     "phoneNumber":"123-456-4928",
                     "websiteURL":"www.url.com",
                     "icon":"",
                     "membershipLevel":"Bronze",
-                    "description":"delivery service"
+                    "description":"Inn and Bar"
                 }
             ]
         },
         {
             "company":[
                 {
-                    "name":"footlocker",
-                    "address":"1234 2nd street Boise, ID",
-                    "phoneNumber":"123-456-4928",
-                    "websiteURL":"www.url.com",
-                    "icon":"",
-                    "membershipLevel":"Bronze",
-                    "description":"shoe store"
+                    "name":"Sid's Garage",
+                    "address":"3525 E Longwing Ln, Meridian, ID 83646",
+                    "phoneNumber":"+1 208-519-3092",
+                    "websiteURL":"https://www.sidsgarage.com/",
+                    "icon":"//images.squarespace-cdn.com/content/v1/638d647a8e6bdb6fceed1f55/ca11d72a-76e1-4e25-afa1-87d2f57c59e7/whitelinesids.png?format=1500w",
+                    "membershipLevel":"Silver",
+                    "description":"Burger Restaurant"
                 }
             ]
         },

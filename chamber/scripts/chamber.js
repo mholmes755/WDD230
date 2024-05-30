@@ -124,17 +124,24 @@ getMembers(membersURL);
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const windSpeed = document.querySelector('#windSpeed');
-const cloudCover = document.querySelector('cloudCover');
+const description = document.querySelector('#description');
+const forecastContainer = document.querySelector('#forecast');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.61&lon=-116.19&units=imperial&appid=facb7aca3b14efbdf278cb020b3ec24c';
+const currentWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=43.61&lon=-116.19&units=imperial&appid=facb7aca3b14efbdf278cb020b3ec24c';
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.61&lon=-116.19&units=imperial&appid=facb7aca3b14efbdf278cb020b3ec24c';
 
-async function apiFetch(){
+
+async function fetchWeatherData(){ // Forecast Weather
     try{
-        const response = await fetch(url);
-        if (response.ok){
-            const data =  await response.json();
-            console.log(data);
-            displayResults(data);
+        const [currentWeatherResponse, forecastResponse] = await Promise.all([
+            fetch(currentWeatherURL),
+            fetch(forecastURL)
+        ]);
+        if (currentWeatherResponse.ok && forecastResponse.ok){
+            const currentWeatherData =  await currentWeatherResponse.json();
+            const forecastData = await forecastResponse.json();
+            displayCurrentWeather(currentWeatherData);
+            displayForecast(forecastData);
         } 
         else{
             throw Error(await response.text());
@@ -144,19 +151,46 @@ async function apiFetch(){
     }
 }
 
-const displayResults = (data)=>{
-    //card builder code
+
+const displayCurrentWeather = (data)=>{
 
         const roundedTemp = Math.round(data.main.temp);
         currentTemp.innerHTML = `Todays Temperature: ${roundedTemp}&deg;F`;
         const roundedWind = Math.round(data.wind.speed);
         windSpeed.innerHTML = `Wind speed: ${roundedWind} mph <i class="wi wi-strong-wind"></i>`;
         const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-        cloudCover.textContent = data.weather[0].description;
+        description.textContent = `Coverage: ${data.weather[0].description}`;
         weatherIcon.setAttribute('src', iconsrc);
-        weatherIcon.setAttribute('width', 25);
-        weatherIcon.setAttribute('height', 30);
-        captionDesc.innerHTML = `${desc}`;
-};
+        weatherIcon.setAttribute('width', 75);
+        weatherIcon.setAttribute('height', 90);
+        // captionDesc.innerHTML = `${desc}`;
+    };
 
-apiFetch();
+
+        // Forecast code
+        const displayForecast = (data) =>{
+            const forecastList = data.list;
+            const dailyForecast = forecastList.filter((forecast, index) => index % 8 === 0).slice(1,4);
+
+            dailyForecast.forEach(forecast => {
+                const forecastElement = document.createElement('div');
+                forecastElement.classList.add('forecast');
+
+
+                const options = {month: 'long', weekday: 'short', day: 'numeric'};
+                const date = new Date(forecast.dt * 1000).toLocaleDateString('en-US', options);
+                const temp = `Temp: ${Math.round(forecast.main.temp)} &deg;F`;
+                const forecastDescription = forecast.weather[0].description;
+                const windSpeedDescription = `Wind: ${Math.round(forecast.wind.speed)} mph <i class="wi wi-strong-wind"></i>`
+
+                forecastElement.innerHTML =`
+                <h3>${date}</h3>
+                <p>${temp}</p>
+                <p>Coverage: ${forecastDescription}</p>
+                <p>${windSpeedDescription}</p>`;
+
+                forecastContainer.appendChild(forecastElement);
+            })
+    };
+
+fetchWeatherData();
