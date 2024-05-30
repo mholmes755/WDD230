@@ -91,8 +91,8 @@ const displayMembers = (companies) =>{
             let websiteURL = document.createElement('p');
             websiteURL.textContent = company.websiteURL;
 
-            let icon = document.createElement('p');
-            icon.textContent = company.icon;
+            let icon = document.createElement('img');
+            icon.setAttribute('src', company.icon);
 
             let membershipLevel = document.createElement('p');
             membershipLevel.textContent = `Member Level: ${company.membershipLevel}`;

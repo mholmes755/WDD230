@@ -43,13 +43,13 @@
         {
             "company":[
                 {
-                    "name":"dunkin donuts",
-                    "address":"1234 2nd street Boise, ID",
-                    "phoneNumber":"123-456-4928",
-                    "websiteURL":"www.url.com",
-                    "icon":"",
-                    "membershipLevel":"Bronze",
-                    "description":"donuts and coffee"
+                    "name":"Peterson Chevrolet Buick Cadillac",
+                    "address":"12300 Fairview Ave, Boise, ID 83713",
+                    "phoneNumber":"+1 208-323-5000",
+                    "websiteURL":"https://www.petersonchevy.com/",
+                    "icon":"https://www.petersonchevy.com/wp-content/themes/DealerInspireDealerTheme/images/logo.png?ver=1708961773",
+                    "membershipLevel":"Gold",
+                    "description":"Car Dealership"
                 }
             ]
         },
