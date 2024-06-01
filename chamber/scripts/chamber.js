@@ -93,6 +93,10 @@ const displayMembers = (companies) =>{
 
             let icon = document.createElement('img');
             icon.setAttribute('src', company.icon);
+            icon.setAttribute('width', '100');
+            icon.setAttribute('height', '50');
+            
+            
 
             let membershipLevel = document.createElement('p');
             membershipLevel.textContent = `Member Level: ${company.membershipLevel}`;
@@ -194,3 +198,49 @@ const displayCurrentWeather = (data)=>{
     };
 
 fetchWeatherData();
+
+
+
+// Banner Visibility
+const banner = document.querySelector('#banner');
+
+// Get the current day of the week
+const currentDay = 2;//new Date().getDay();
+
+// Days mapping
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+// Check if today is Monday (1), Tuesday (2), or Wednesday (3)
+if (currentDay === 1 || currentDay === 2 || currentDay === 3) {
+    banner.style.display = "block"; // Show the banner
+} else {
+    banner.style.display = "none"; // Hide the banner
+}
+
+
+// Responsive Banner
+const bannerButten = document.querySelector('#bannerButton');
+const bannerDiv = document.querySelector('#banner');
+
+hamButton.addEventListener('click', () => {
+	bannerDiv.classList.toggle('open');
+	bannerButton.classList.toggle('open');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

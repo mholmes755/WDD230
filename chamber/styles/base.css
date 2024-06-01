@@ -67,9 +67,38 @@ li{
     display: flex;
 }
 
- #heroImage{
-    width: 100%;
+.content{
+    display: block;
 }
+
+
+#banner{
+    width: 100%;
+    height: 100px;
+    padding: 0px 0px 0px 10px;
+    margin: 0;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px;
+    background-color: rgb(11, 73, 149);
+}
+
+#banner button, #banner a{
+    border-radius: 6px;
+    font-size: 2rem;
+    width: 100%;
+    height: 75px;
+    color: white;
+    text-decoration:underline;
+    background-color: rgba(0, 0, 0, .01);
+    border: none;
+}
+
+#banner h2{
+    color: white;
+    text-align: center;
+}
+
+
 #currentEvents h2, 
 #weather h2,
 #ads h2
@@ -89,12 +118,23 @@ li{
     background: url('chamber/images/weatherDisplay.png') no-repeat center center;
     background-size: cover;
     padding: 1rem;
-    box-shadow: none;
-    border-radius: 5%;
     font-weight: bold;
     font-size: 1.5rem;
     
 }
+
+#forecast{
+    display: block;    
+}
+#forecast div{
+    box-shadow: 2px 2px 10px black;
+    font-size: 20px;
+    margin-top: 1.5rem;
+}
+#forecast div p{
+    padding-top: 1rem;
+}
+
 #ads{
     border: 1px solid black;
     margin: 5px;
