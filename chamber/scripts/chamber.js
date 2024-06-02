@@ -80,16 +80,16 @@ const displayMembers = (companies) =>{
 
             let section = document.createElement('section');
             let name = document.createElement('h3');
-            name.textContent = company.name;
+            name.innerHTML = `${company.name}`;
 
             let address = document.createElement('p');
-            address.textContent = `Address: ${company.address}`;
+            address.innerHTML = `<strong>Address</strong>: ${company.address}`;
 
             let phoneNumber = document.createElement('p');
-            phoneNumber.textContent = `Phone Number: ${company.phoneNumber}`;
+            phoneNumber.innerHTML = `<strong>Phone Number</strong>: ${company.phoneNumber}`;
 
             let websiteURL = document.createElement('p');
-            websiteURL.textContent = company.websiteURL;
+            websiteURL.innerHTML = `<strong>Site:</strong> <a href="${company.websiteURL}" target="_blank" style="text-decoration:none;">Site Link</a>`;
 
             let icon = document.createElement('img');
             icon.setAttribute('src', company.icon);
@@ -99,10 +99,10 @@ const displayMembers = (companies) =>{
             
 
             let membershipLevel = document.createElement('p');
-            membershipLevel.textContent = `Member Level: ${company.membershipLevel}`;
+            membershipLevel.innerHTML = `<strong>Member Level:</strong> ${company.membershipLevel}`;
 
             let description = document.createElement('p');
-            description.textContent = company.description;
+            description.innerHTML = `<strong>Description: </strong>${company.description}`;
     
             section.appendChild(icon);
             section.appendChild(name);

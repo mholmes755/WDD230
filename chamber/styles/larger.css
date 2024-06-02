@@ -118,8 +118,8 @@
     }
     
     #weather{
-        background: url('/chamber/images/weatherDisplay.png') no-repeat center center;
-        background-size: cover;
+        /* background: url('/chamber/images/weatherDisplay.webp') no-repeat center center;
+        background-size: cover; */
         padding: 1rem;
         box-shadow: none;
         border-radius: 5%;
@@ -149,6 +149,7 @@
     }
 
     footer{
+        padding-top: 10px;
         display: flex;
         justify-content: space-around;
     }
@@ -210,18 +211,35 @@
         transform: scale(1.1);
     }
 
+
+
+
+    /* Directory Page*/
+
+    #companyCards{
+        display: grid;
+        grid-template-columns: auto auto;
+        border: 5px solid black;
+    }
+
+    #companyCards section{
+        margin: 10px 10px;
+    }
+
+
+
     /* Form Page */
 
     #joinMain{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 1fr;
         gap: 15px;
         margin: 2rem 10px;
     }
 
     .form{
         width: 400px;
-        margin-left: 300px;
+        margin-left: 10px;
 
     }
     .form fieldset{
@@ -276,14 +294,16 @@
 
     #joinTable{
         margin-left: 10px;
+        width: 500px;
     }
 
     #joinTable td, #joinTable th{
         text-align: center;
         height: 60px;
+        width: 2rem;
     }
     #joinTable .memberLevel{
-        width: 50px;
+        width: 10px;
     }
 
     /* thank you */
@@ -291,10 +311,6 @@
         height: 545px;
     }
 
-    #companyCards{
-        display: grid;
-        grid-template-columns: auto auto;
-        border: 5px solid black;
-    }
+
 
 }

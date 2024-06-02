@@ -7,6 +7,7 @@
                     "address":"1123 N Milwaukee St, Boise, ID 83704",
                     "phoneNumber":"+1 208-917-4199",
                     "websiteURL":"https://www.planetfitness.com/gyms/boise-n-milwaukee-st-id?utm_medium=organic&utm_source=extnet",
+                    "urlLink":"Plant Fitness",
                     "icon":"images/planetFitnessLogo.webp",
                     "membershipLevel":"Gold",
                     "description":"Public Fitness Center"
@@ -21,6 +22,7 @@
                     "address":"670 Julia Davis Dr, Boise, ID 83702",
                     "phoneNumber":"+1 208-345-8330",
                     "websiteURL":"https://boiseartmuseum.org/",
+                    "urlLink":"Art Museum",
                     "icon":"images/boiseArtMuseumLogo.webp",
                     "membershipLevel":"Non Profit",
                     "description":"Contemporary artwork & exhibitions housed in an art deco building, with an outdoor sculpture garden"
@@ -34,6 +36,7 @@
                     "address":"3637 N Lakeharbor Ln, Boise, ID 83703",
                     "phoneNumber":"+1 208-853-0640",
                     "websiteURL":"https://www.hendricksveterinaryhospital.com/?y_source=1_MTE2Njg2MzYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+                    "urlLink":"Veterinary Hospital",
                     "icon":"images/veterinaryLogo.webp",
                     "membershipLevel":"Bronze",
                     "description":"Veterinarian Hospital"
@@ -47,6 +50,7 @@
                     "address":"12300 Fairview Ave, Boise, ID 83713",
                     "phoneNumber":"+1 208-323-5000",
                     "websiteURL":"https://www.petersonchevy.com/",
+                    "urlLink":"Peterson Chevrolet",
                     "icon":"images/petersonImg.webp",
                     "membershipLevel":"Gold",
                     "description":"Car Dealership"
@@ -60,6 +64,7 @@
                     "address":"633 N Milwaukee St, Boise, ID 83704",
                     "phoneNumber":"+1 208-375-3275", 
                     "websiteURL":"https://www.target.com/sl/boise/617",
+                    "urlLink":"Target",
                     "icon":"images/targetLogo.webp",
                     "membershipLevel":"Bronze",
                     "description":"Retail chain offering home goods, clothing, electronics & more, plus exclusive designer collections"
@@ -73,6 +78,7 @@
                     "address":"127990 W Overland Rd, Boise, ID 83709",
                     "phoneNumber":"+1 208-376-1001",
                     "websiteURL":"https://www.lowes.com/store/ID-Boise/0688?y_source=1_MTE4MjgzMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+                    "urlLink":"Lowe's",
                     "icon":"images/lowesLogo.webp",
                     "membershipLevel":"Silver",
                     "description":"Home improvement chain for appliances & gardening supplies, plus tools & hardware"
@@ -86,6 +92,7 @@
                     "address":"2051 S Cole Rd, Boise, ID 83709",
                     "phoneNumber":"+1 208-321-8700",
                     "websiteURL":"https://www.costco.com/warehouse-locations/boise-ID-761.html",
+                    "urlLink":"Costco",
                     "icon":"images/costcoLogo.webp",
                     "membershipLevel":"Silver",
                     "description":"Members-only warehouse selling a huge variety of items including bulk groceries, electronics & more"
@@ -99,6 +106,7 @@
                     "address":"8600 W Overland Rd, Boise, ID 83709",
                     "phoneNumber":"+1 208-377-1726",
                     "websiteURL":"www.url.com",
+                    "urlLink":"Wendy's",
                     "icon":"images/wendy'sLogo.webp",
                     "membershipLevel":"Bronze",
                     "description":"Fast-food burger chain serving sides such as chili & baked potatoes"

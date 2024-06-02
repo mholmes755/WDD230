@@ -156,7 +156,7 @@ footer{
 
 
 
-/* Explore Page */
+/* Discover Page */
 table{
     border-collapse: collapse;
     border: 1.5px solid black;
@@ -185,6 +185,9 @@ th, td{
 #localPictures{
     display: inline;
     max-width: 200px;
+}
+#calendar{
+    width: 250px;
 }
 
 
@@ -247,6 +250,11 @@ th, td{
 .memberLevel{
     width: 50px;
 }
+
+#joinTable{
+    width: 250px;
+}
+
 #joinTable td, #joinTable th{
     text-align: center;
     height: 50px;
