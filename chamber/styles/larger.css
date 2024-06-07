@@ -230,11 +230,11 @@
         grid-template-columns: 1fr 1fr;
         box-shadow: 8px 8px 5px rgb(222, 184, 135);
         margin: 1rem;
-        padding: 1rem auto;
+        padding: 1rem;
     }
     #calendar{
         margin: 1rem;
-        padding: 1rem 1rem -1px 1rem;
+        padding: 1rem 1rem;
         padding-bottom: 0px;
         text-align: center;
 
@@ -243,7 +243,7 @@
     #funRun{
         box-shadow: 8px 8px 5px rgb(222, 184, 135);
         margin: 1rem;
-        padding: 1rem auto;
+        padding: 1rem;
     }
     #localPictures{
         display: grid;
